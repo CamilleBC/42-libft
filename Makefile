@@ -6,11 +6,11 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/05 13:57:51 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/11 18:35:46 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-TARGET_LIB = libft.a
+NAME = libft.a
 
 CC         = gcc
 LIB_CFLAGS = -Wall -Werror -Wextra
@@ -90,15 +90,14 @@ RED    = \033[1;31m
 PURPLE = \033[1;35m
 NC     = \033[0m
 
-all: 
-	@mkdir -p $(LIB_BUILD_DIR)
-	@make $(TARGET_LIB)
+all: $(NAME)
 
-$(TARGET_LIB): $(LIB_OBJECTS)
+$(NAME): $(LIB_OBJECTS)
 	@echo "[Building ${PURPLE}library${NC}]"
-	@ar rc $(TARGET_LIB) $(LIB_OBJECTS)
+	@ar rc $(NAME) $(LIB_OBJECTS)
 
 $(LIB_BUILD_DIR)/%.o:%.c
+	@mkdir -p $(LIB_BUILD_DIR)
 	@$(CC) $(LIB_CFLAGS) -I$(LIB_INC_DIR) -o $@ -c $<
 
 clean:
@@ -107,6 +106,6 @@ clean:
 
 fclean: clean
 	@echo "[Cleaning ${PURPLE}lib${NC} binary]"
-	@/bin/rm -f $(TARGET_LIB)
+	@/bin/rm -f $(NAME)
 
 re: fclean all

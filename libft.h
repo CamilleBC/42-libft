@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/04 20:34:55 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/11 18:04:16 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef unsigned char	t_byte;
-typedef unsigned long	t_x64register;
+typedef	uint8_t	t_bool;
+typedef uint8_t	t_byte;
 
 typedef struct		s_list
 {
