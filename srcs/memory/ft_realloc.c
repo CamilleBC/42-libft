@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 20:23:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/08 18:29:45 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/08 19:02:01 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ void	*ft_realloc(void *ptr, size_t len, size_t new_len)
 	}
 	if (new_len <= len)
 	{
-		return (NULL);
 		free(ptr);
+		return (NULL);
 	}
 	if ((tmp = malloc(new_len)) == NULL)
 	{
