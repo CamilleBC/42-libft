@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/11 18:35:46 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/16 19:09:55 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,7 @@ LIB_SRCS += ft_atoi.c \
 # we use the VPATH variable which causes MAKE to look for sources in all those
 # directories
 VPATH         := ./srcs/math:./srcs/memory:./srcs/lists:./srcs/string
-LIB_INC_DIR   := .
+LIB_INC_DIR   := ./srcs
 LIB_BUILD_DIR := ./build
 LIB_OBJECTS   = $(patsubst %,$(LIB_BUILD_DIR)/%,$(LIB_SRCS:.c=.o))
 
