@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/16 19:09:55 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/17 12:41:18 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ LIB_SRCS += ft_atoi.c \
 			ft_putendl_fd.c \
 			ft_putnbr.c \
 			ft_putnbr_fd.c \
+			ft_putnstr.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_putstr_padzeroes.c \
