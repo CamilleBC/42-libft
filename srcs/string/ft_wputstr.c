@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/19 16:12:15 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/19 16:20:25 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/19 16:39:03 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 void	ft_wputstr(wchar_t	*s)
 {
+	size_t	len;
 	if (s == NULL)
 		return ;
-	while (*s)
-	{
-		ft_wputchar(*s);
-		++s;
-	}
+	len = ft_wstrlen(s);
+	write(1, s, len);
 }
