@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_wputstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/20 09:17:58 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/19 16:19:23 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/19 16:12:15 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/19 16:20:25 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putchar(char c)
+void	ft_wputstr(wchar_t	*s)
 {
-	write(1, &c, 1);
+	if (s == NULL)
+		return ;
+	while (*s)
+	{
+		ft_wputchar(*s);
+		++s;
+	}
 }

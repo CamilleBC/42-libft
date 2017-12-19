@@ -6,16 +6,16 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/17 12:41:18 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/19 16:23:15 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC         = gcc
-LIB_CFLAGS = -Wall -Werror -Wextra
+CC 			= gcc
+LIB_CFLAGS	= -Wall -Werror -Wextra
 
-LIB_SRCS = 	ft_sqrt.c
+LIB_SRCS =	ft_sqrt.c
 LIB_SRCS +=	ft_bzero.c \
 			ft_memalloc.c \
 			ft_memchr.c \
@@ -76,20 +76,24 @@ LIB_SRCS += ft_atoi.c \
 			ft_strsub.c \
 			ft_strtrim.c \
 			ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c \
+			ft_wcharlen.c \
+			ft_wputchar.c \
+			ft_wputstr.c \
+			ft_wstrlen.c
 
 # sources and objects.
 # we use the VPATH variable which causes MAKE to look for sources in all those
 # directories
-VPATH         := ./srcs/math:./srcs/memory:./srcs/lists:./srcs/string
-LIB_INC_DIR   := ./srcs
-LIB_BUILD_DIR := ./build
-LIB_OBJECTS   = $(patsubst %,$(LIB_BUILD_DIR)/%,$(LIB_SRCS:.c=.o))
+VPATH			:= ./srcs/math:./srcs/memory:./srcs/lists:./srcs/string
+LIB_INC_DIR		:= ./includes
+LIB_OBJECTS_DIR	:= ./obj
+LIB_OBJECTS		= $(patsubst %,$(LIB_OBJECTS_DIR)/%,$(LIB_SRCS:.c=.o))
 
 # echo output colours
-RED    = \033[1;31m
-PURPLE = \033[1;35m
-NC     = \033[0m
+RED		= \033[1;31m
+PURPLE	= \033[1;35m
+NC		= \033[0m
 
 all: $(NAME)
 
@@ -97,13 +101,13 @@ $(NAME): $(LIB_OBJECTS)
 	@echo "[Building ${PURPLE}library${NC}]"
 	@ar rc $(NAME) $(LIB_OBJECTS)
 
-$(LIB_BUILD_DIR)/%.o:%.c
-	@mkdir -p $(LIB_BUILD_DIR)
+$(LIB_OBJECTS_DIR)/%.o:%.c
+	@mkdir -p $(LIB_OBJECTS_DIR)
 	@$(CC) $(LIB_CFLAGS) -I$(LIB_INC_DIR) -o $@ -c $<
 
 clean:
 	@echo "[Cleaning ${PURPLE}lib${NC} objects]"
-	@/bin/rm -rf $(LIB_BUILD_DIR)
+	@/bin/rm -rf $(LIB_OBJECTS_DIR)
 
 fclean: clean
 	@echo "[Cleaning ${PURPLE}lib${NC} binary]"

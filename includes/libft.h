@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/17 12:51:34 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/19 16:19:13 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,9 @@ void				ft_strtolower(char *s);
 void				ft_strtoupper(char *s);
 int					ft_strisalnum(char *s);
 uint32_t			ft_sqrt(uint32_t nb);
+size_t				ft_wcharlen(uint32_t wchar);
+void				ft_wputchar(wchar_t c);
+void				ft_wputstr(wchar_t	*s);
+size_t				ft_wstrlen(uint32_t *wstring);
 
 #endif
