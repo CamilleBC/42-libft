@@ -15,7 +15,9 @@ NAME = libft.a
 CC 			= gcc
 LIB_CFLAGS	= -Wall -Werror -Wextra
 
-LIB_SRCS =	ft_sqrt.c
+LIB_SRCS =	ft_absolute.c \
+			ft_max.c \
+			ft_sqrt.c
 LIB_SRCS +=	ft_bzero.c \
 			ft_memalloc.c \
 			ft_memchr.c \

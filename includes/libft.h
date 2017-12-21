@@ -27,7 +27,9 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+uintmax_t			absolute(intmax_t n);
 void				ft_bzero(void *s, size_t n);
+intmax_t			max(intmax_t a, intmax_t b);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
