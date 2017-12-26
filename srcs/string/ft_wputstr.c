@@ -6,13 +6,13 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/19 16:12:15 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/26 19:43:42 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/26 20:41:54 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_wputstr(wchar_t	*s)
+void	ft_wputstr(uint32_t	*s)
 {
 	if (s == NULL)
 		return ;

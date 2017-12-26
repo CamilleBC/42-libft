@@ -6,20 +6,20 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/26 19:31:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/26 19:36:38 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/26 20:44:19 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_wputnstr(wchar_t	*s, size_t len)
+void	ft_wputnstr(uint32_t *s, size_t n)
 {
 	if (s == NULL)
 		return (NULL);
-	while (len)
+	while (n)
 	{
 		ft_wputchar(*s);
-		--len;
+		--n;
 		++s;
 	}
 }

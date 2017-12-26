@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/19 16:23:15 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/26 20:43:33 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,6 +81,7 @@ LIB_SRCS += ft_atoi.c \
 			ft_toupper.c \
 			ft_wcharlen.c \
 			ft_wputchar.c \
+			ft_wputnstr.c \
 			ft_wputstr.c \
 			ft_wstrlen.c
 
