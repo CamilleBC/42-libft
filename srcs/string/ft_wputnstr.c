@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wputstr.c                                       :+:      :+:    :+:   */
+/*   ft_wputnstr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/19 16:12:15 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/26 19:43:42 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/26 19:31:03 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/26 19:36:38 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_wputstr(wchar_t	*s)
+void	ft_wputnstr(wchar_t	*s, size_t len)
 {
 	if (s == NULL)
-		return ;
-	while (*s)
+		return (NULL);
+	while (len)
 	{
 		ft_wputchar(*s);
+		--len;
 		++s;
 	}
+}
