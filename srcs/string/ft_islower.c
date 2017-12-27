@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wputnstr.c                                      :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/26 19:31:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 00:23:21 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/26 23:20:58 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/26 23:22:09 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
 
-void	ft_wputnstr(uint32_t *s, size_t n)
+int8_t	ft_islower(char c)
 {
-	if (s == NULL)
-		return ;
-	while (n)
-	{
-		ft_wputchar(*s);
-		--n;
-		++s;
-	}
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }

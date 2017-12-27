@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wputnstr.c                                      :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/26 19:31:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 00:23:21 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/26 23:20:51 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/26 23:21:42 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_wputnstr(uint32_t *s, size_t n)
+int8_t	ft_isupper(char c)
 {
-	if (s == NULL)
-		return ;
-	while (n)
-	{
-		ft_wputchar(*s);
-		--n;
-		++s;
-	}
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
 }
