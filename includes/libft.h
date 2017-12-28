@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 00:23:40 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/27 21:49:56 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-uintmax_t			absolute(intmax_t n);
 void				ft_bzero(void *s, size_t n);
-intmax_t			max(intmax_t a, intmax_t b);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -98,11 +96,13 @@ void				ft_strcrepl(char *s, char c, char substitute);
 void				ft_strtolower(char *s);
 void				ft_strtoupper(char *s);
 int					ft_strisalnum(char *s);
-uint32_t			ft_sqrt(uint32_t nb);
 size_t				ft_wcharlen(uint32_t wchar);
 void				ft_wputchar(uint32_t c);
 void				ft_wputnstr(uint32_t *s, size_t n);
 void				ft_wputstr(uint32_t *s);
 size_t				ft_wstrlen(uint32_t *wstring);
+uintmax_t			ft_absolute(intmax_t n);
+intmax_t			ft_max(intmax_t a, intmax_t b);
+uint32_t			ft_sqrt(uint32_t nb);
 
 #endif
