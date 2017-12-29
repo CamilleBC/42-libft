@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wstrlen.c                                       :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/18 10:25:13 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/29 21:46:26 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/29 21:05:28 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/29 21:05:52 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** We need to calculate the length to output by checking how many bytes the
-** UTF-8 char will take.
-** We cannot really use the standard strlen function as we check 4 bytes at a
-** time. We would only go 2 times faster. Maybe I'll implement it later.
-*/
-
-size_t	ft_wstrlen(wchar_t *ws)
+intmax_t	ft_min(intmax_t a, intmax_t b)
 {
-	size_t	len;
-
-	len = 0;
-	while (ws[len] != L'\0')
-		++len;
-	return (len);
+	if (b < a)
+		return (b);
+	return (a);
 }

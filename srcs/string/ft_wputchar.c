@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/19 16:11:33 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/26 20:38:51 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/29 21:55:20 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** Depending on that, we use mask to write value without the
 */
 
-static void	print_4bytes(uint32_t wchar)
+static void	print_4bytes(wchar_t wchar)
 {
 		uint8_t	tmp;
 
@@ -31,7 +31,7 @@ static void	print_4bytes(uint32_t wchar)
 		write(1, &tmp, 1);
 }
 
-static void	print_3bytes(uint32_t wchar)
+static void	print_3bytes(wchar_t wchar)
 {
 		uint8_t tmp;
 
@@ -43,7 +43,7 @@ static void	print_3bytes(uint32_t wchar)
 		write(1, &tmp, 1);
 }
 
-static void	print_2bytes(uint32_t wchar)
+static void	print_2bytes(wchar_t wchar)
 {
 		uint8_t	tmp;
 
@@ -53,7 +53,7 @@ static void	print_2bytes(uint32_t wchar)
 		write(1, &tmp, 1);
 }
 
-static void	print_utf8(uint32_t wchar)
+static void	print_utf8(wchar_t wchar)
 {
 		if (wchar >= 0x10000)
 				print_4bytes(wchar);
@@ -64,10 +64,10 @@ static void	print_utf8(uint32_t wchar)
 }
 
 
-void		ft_wputchar(uint32_t c)
+void		ft_wputchar(wchar_t wc)
 {
-		if ((MB_CUR_MAX >= 2) && (c >= 0x80))
-				print_utf8(c);
+		if ((MB_CUR_MAX >= 2) && (wc >= 0x80))
+				print_utf8(wc);
 		else
-				write(1, &c, 1);
+				write(1, &wc, 1);
 }

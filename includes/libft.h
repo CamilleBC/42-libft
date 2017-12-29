@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 21:49:56 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/29 21:44:01 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,12 +96,13 @@ void				ft_strcrepl(char *s, char c, char substitute);
 void				ft_strtolower(char *s);
 void				ft_strtoupper(char *s);
 int					ft_strisalnum(char *s);
-size_t				ft_wcharlen(uint32_t wchar);
-void				ft_wputchar(uint32_t c);
-void				ft_wputnstr(uint32_t *s, size_t n);
-void				ft_wputstr(uint32_t *s);
-size_t				ft_wstrlen(uint32_t *wstring);
+size_t				ft_wcharlen(wchar_t wc);
+void				ft_wputchar(wchar_t wc);
+void				ft_wputnstr(wchar_t *ws, size_t n);
+void				ft_wputstr(wchar_t *ws);
+size_t				ft_wstrlen(wchar_t *ws);
 uintmax_t			ft_absolute(intmax_t n);
+intmax_t			ft_min(intmax_t a, intmax_t b);
 intmax_t			ft_max(intmax_t a, intmax_t b);
 uint32_t			ft_sqrt(uint32_t nb);
 
