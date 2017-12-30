@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_absolute.c                                      :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/21 01:11:17 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 21:47:47 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/30 23:19:53 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-uintmax_t	ft_absolute(intmax_t n)
+uint32_t	ft_abs(int32_t nb)
 {
-	if (n < 0)
-		return ((uintmax_t)-n);
-	return ((uintmax_t)n);
+	nb &= 0x7FFFFFFF;
+	return (nb);
 }

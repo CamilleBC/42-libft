@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/30 19:40:11 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/30 23:22:16 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,10 @@ NAME = libft.a
 CC 			= gcc
 LIB_CFLAGS	= -Wall -Werror -Wextra
 
-LIB_SRCS =	ft_absolute.c \
-			ft_abs_float.c \
+LIB_SRCS =	ft_abs.c \
+			ft_absd.c \
+			ft_absl.c \
+			ft_absf.c \
 			ft_min.c \
 			ft_max.c \
 			ft_pow.c \
