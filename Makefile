@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/29 21:08:11 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/30 19:40:11 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,11 @@ CC 			= gcc
 LIB_CFLAGS	= -Wall -Werror -Wextra
 
 LIB_SRCS =	ft_absolute.c \
+			ft_abs_float.c \
 			ft_min.c \
 			ft_max.c \
+			ft_pow.c \
+			ft_round.c \
 			ft_sqrt.c
 LIB_SRCS +=	ft_bzero.c \
 			ft_memalloc.c \
