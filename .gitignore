@@ -1,4 +1,5 @@
 *.code-workspace
 /debug
 /build
+/obj
 libft.a
