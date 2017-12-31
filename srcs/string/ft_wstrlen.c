@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 10:25:13 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/29 21:46:26 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/31 12:22:22 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,13 @@
 
 size_t	ft_wstrlen(wchar_t *ws)
 {
-	size_t	len;
+	size_t len;
 
 	len = 0;
-	while (ws[len] != L'\0')
-		++len;
+	while (*ws != L'\0')
+	{
+		len += ft_wcharlen(*ws);
+		++ws;
+	}
 	return (len);
 }
