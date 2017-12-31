@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/21 01:11:17 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/30 23:19:53 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/31 13:34:28 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 uint32_t	ft_abs(int32_t nb)
 {
-	nb &= 0x7FFFFFFF;
-	return (nb);
+   int32_t mask;
+
+   mask = (nb >> (sizeof(int32_t) * CHAR_BIT - 1));
+   nb = (uint32_t)((nb + mask) ^ mask);
+   return (nb);
 }
