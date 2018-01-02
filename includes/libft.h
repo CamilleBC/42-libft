@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/31 13:45:39 by cbaillat         ###   ########.fr       */
+/*   Updated: 2017/12/31 14:38:16 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putendl(char const *s);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr(int n);
+void				ft_putnbrf(long double n, size_t size);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnstr(char const *s, size_t n);
 void				ft_putstr(char const *s);
@@ -105,6 +106,7 @@ size_t				ft_wstrlen(wchar_t *ws);
 uint32_t			ft_abs(int32_t nb);
 double				ft_absd(double x);
 uint64_t			ft_absl(int64_t nb);
+long double			ft_absld(long double x);
 float				ft_absf(float x);
 uintmax_t			ft_absolute(intmax_t n);
 double				ft_abs_float(double x);

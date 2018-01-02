@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_round.c                                         :+:      :+:    :+:   */
+/*   ft_putnbrf.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/30 18:14:14 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/31 14:42:09 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/31 14:32:56 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/31 14:37:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-uintmax_t	ft_round(long double f)
+void	ft_putnbrf(long double n, size_t size)
 {
-	uintmax_t	integer;
-	long double	decimal;
+	long double decimal;
 
-	integer = (uintmax_t)f;
-	decimal = f - integer;
-	return ((decimal < 0.5) ? integer : integer + 1);
+	ft_putnbr((uintmax_t)n);
+	if (size > 0)
+	{
+		ft_putchar('.');
+		decimal = n - (uintmax_t)n;
+		while (size-- > 0)
+			decimal *= 10;
+		ft_putnbr(ft_round(decimal));
+	}
 }

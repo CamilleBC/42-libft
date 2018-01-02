@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_round.c                                         :+:      :+:    :+:   */
+/*   ft_absld.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/30 18:14:14 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/31 14:42:09 by cbaillat         ###   ########.fr       */
+/*   Created: 2017/12/31 13:56:00 by cbaillat          #+#    #+#             */
+/*   Updated: 2017/12/31 14:25:05 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-uintmax_t	ft_round(long double f)
-{
-	uintmax_t	integer;
-	long double	decimal;
+/*
+** By casting the value using the adress, we get the internal bit reprensation
+** not the converted value in integer.
+*/
 
-	integer = (uintmax_t)f;
-	decimal = f - integer;
-	return ((decimal < 0.5) ? integer : integer + 1);
+long double	ft_absld(long double x)
+{
+	uintmax_t	casted;
+
+	if (sizeof(long double) == 8)
+	{
+		casted = *(uintmax_t*) &x;
+		casted &= 0x7FFFFFFFFFFFFFFF;
+		return *(long double*)&casted;
+	}
+	else
+		return ((x < 0) ? -x : x);
 }

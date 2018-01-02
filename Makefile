@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2017/12/30 23:22:16 by cbaillat         ###   ########.fr        #
+#    Updated: 2017/12/31 14:38:38 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ LIB_CFLAGS	= -Wall -Werror -Wextra
 LIB_SRCS =	ft_abs.c \
 			ft_absd.c \
 			ft_absl.c \
+			ft_absld.c \
 			ft_absf.c \
 			ft_min.c \
 			ft_max.c \
@@ -54,6 +55,7 @@ LIB_SRCS += ft_atoi.c \
 			ft_putendl.c \
 			ft_putendl_fd.c \
 			ft_putnbr.c \
+			ft_putnbrf.c \
 			ft_putnbr_fd.c \
 			ft_putnstr.c \
 			ft_putstr.c \
