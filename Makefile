@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/01/18 15:40:12 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/01/18 17:06:34 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,9 @@ CFLAGS	= -Wall -Werror -Wextra
 # libft sources
 # we use the VPATH variable which causes MAKE to look for sources in all those
 # directories
-VPATH	+= ./srcs/math:./srcs/memory:./srcs/lists:./srcs/strings
-SRCS	=	ft_lstadd.c \
+VPATH	+= 	./srcs/iostream:./srcs/math:./srcs/memory:./srcs/lists:./srcs/strings
+SRCS	=	get_next_line.c
+SRCS	+=	ft_lstadd.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
 			ft_lstiter.c \
