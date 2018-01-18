@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iostream.h                                         :+:      :+:    :+:   */
+/*   ft_strisnum.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/18 16:59:44 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 17:13:53 by cbaillat         ###   ########.fr       */
+/*   Created: 2018/01/18 17:28:55 by cbaillat          #+#    #+#             */
+/*   Updated: 2018/01/18 17:29:33 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef IOSTREAM_H
-# define IOSTREAM_H
+#include "strings.h"
 
 /*
-** include stdio.h to get FOPEN_MAX macro
+** Returns (1) if the string is numerical, (0) otherwise
 */
-# include <stdio.h>
-# include "libft.h"
 
-# define BUFF_SIZE	256
-# define LINE_READ	(int8_t)1
-# define FILE_READ	(int8_t)0
-
-typedef struct	s_filedes
+int		ft_strisnum(char *s)
 {
-	uint32_t	filedes;
-	char		buffer[BUFF_SIZE];
-}				t_filedes;
-
-int				get_next_line(const int fd, char **line);
-
-#endif
+	if (s == NULL)
+		return (0);
+	while (*s != 0)
+	{
+		if (!ft_isdigit(*s))
+			return (0);
+		++s;
+	}
+	return (1);
+}

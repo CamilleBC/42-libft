@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 18:32:21 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:49:21 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 17:32:02 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #define MIN_INT		(int)-2147483648
 #define OVERFLOW	(int)-1
 #define UNDERFLOW	(int)0
-#define SUCCESS		(int)-1
+#define OK			(int)1
 
 static int	ft_getsignedness(char c, int *sign)
 {
@@ -66,7 +66,7 @@ int			ft_atoi(const char *str)
 	while (*str >= '0' && *str <= '9')
 	{
 		digit = *str - '0';
-		if ((no_overflow = ft_checkoverflow(number, digit, sign)) != SUCCESS)
+		if ((no_overflow = ft_checkoverflow(number, digit, sign)) != OK)
 			return (no_overflow);
 		number = (number * 10) + digit;
 		++str;
