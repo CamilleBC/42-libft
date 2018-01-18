@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/30 19:35:42 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/31 13:41:15 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:45:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "math.h"
 
 /*
 ** By casting the value using the adress, we get the internal bit reprensation
@@ -21,7 +21,7 @@ float	ft_absf(float x)
 {
 	uint64_t casted;
 
-	casted = *(uint64_t*) &x;
+	casted = *(uint64_t*)&x;
 	casted &= 0x7FFFFFFF;
-	return *(float*)&casted;
+	return (*(float*)&casted);
 }

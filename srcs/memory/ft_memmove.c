@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 16:44:26 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/11/16 17:39:36 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "memory.h"
 
 /*
 ** 1- We check if the two strings overlap somewhere.

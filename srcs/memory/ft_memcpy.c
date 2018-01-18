@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbaillat <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 17:50:58 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/08 17:51:01 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "memory.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

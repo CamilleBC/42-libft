@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/21 01:11:37 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/27 21:47:58 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:45:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "math.h"
 
 intmax_t	ft_max(intmax_t a, intmax_t b)
 {

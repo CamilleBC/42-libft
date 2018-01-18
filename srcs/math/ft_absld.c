@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/31 13:56:00 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/31 14:25:05 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:45:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "math.h"
 
 /*
 ** By casting the value using the adress, we get the internal bit reprensation
@@ -23,9 +23,9 @@ long double	ft_absld(long double x)
 
 	if (sizeof(long double) == 8)
 	{
-		casted = *(uintmax_t*) &x;
+		casted = *(uintmax_t*)&x;
 		casted &= 0x7FFFFFFFFFFFFFFF;
-		return *(long double*)&casted;
+		return (*(long double*)&casted);
 	}
 	else
 		return ((x < 0) ? -x : x);

@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:02:52 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/11 18:47:50 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "memory.h"
 
 static uint64_t	*x64_cpy(uint64_t *ptr, uint64_t value, size_t *len)
 {

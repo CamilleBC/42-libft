@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/30 18:19:08 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/30 18:39:38 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:45:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "math.h"
 
 double	ft_pow(int32_t base, int32_t pow)
 {

@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 20:23:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/12/11 11:05:49 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "memory.h"
 
 /*
 ** This function returns a pointer to a memory zone of the new length.

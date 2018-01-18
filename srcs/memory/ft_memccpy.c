@@ -6,11 +6,11 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 16:18:26 by cbaillat          #+#    #+#             */
-/*   Updated: 2017/11/14 16:31:15 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "memory.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
