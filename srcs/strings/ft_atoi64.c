@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atoi64.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/16 18:32:21 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 17:54:51 by cbaillat         ###   ########.fr       */
+/*   Created: 2018/01/18 17:45:15 by cbaillat          #+#    #+#             */
+/*   Updated: 2018/01/18 17:55:01 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "strings.h"
+
+
 
 static int32_t	ft_getsignedness(char c, int8_t *sign)
 {
@@ -23,16 +25,16 @@ static int32_t	ft_getsignedness(char c, int8_t *sign)
 	return (0);
 }
 
-static int32_t	ft_checkoverflow(int32_t number, int8_t digit, int8_t sign)
+static int32_t	ft_checkoverflow(int64_t number, int8_t digit, int8_t sign)
 {
-	if (number > (MAX_32 / 10))
+	if (number > (MAX_64 / 10))
 	{
 		if (sign == 1)
 			return (OVERFLOW);
 		else
 			return (UNDERFLOW);
 	}
-	else if (number == (MAX_32 / 10))
+	else if (number == (MAX_64 / 10))
 	{
 		if (sign == 1 && (digit > 7))
 			return (OVERFLOW);
@@ -42,10 +44,10 @@ static int32_t	ft_checkoverflow(int32_t number, int8_t digit, int8_t sign)
 	return (SUCCESS);
 }
 
-int			ft_atoi(const char *str)
+int64_t		ft_atoi64(const char *str)
 {
 	int8_t	sign;
-	int32_t	number;
+	int64_t	number;
 	int8_t	digit;
 	int8_t	no_overflow;
 
@@ -65,7 +67,7 @@ int			ft_atoi(const char *str)
 		number = (number * 10) + digit;
 		++str;
 	}
-	if (number > MAX_32)
+	if (number > MAX_64)
 		return (OVERFLOW);
 	return (number * sign);
 }

@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:38:28 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 17:29:49 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/18 17:55:53 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 # include "libft.h"
 
-int		ft_atoi(const char *str);
+int32_t	ft_atoi(const char *str);
+int64_t	ft_atoi64(const char *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
