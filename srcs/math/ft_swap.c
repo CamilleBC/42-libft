@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strisnum.c                                      :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/18 17:28:55 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/19 17:11:54 by cbaillat         ###   ########.fr       */
+/*   Created: 2018/01/19 11:07:52 by cbaillat          #+#    #+#             */
+/*   Updated: 2018/01/19 11:28:54 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "math.h"
 
 /*
-** Returns (1) if the string is numerical, (0) otherwise
+** We XOR a and b 3 times to swap the values.
 */
 
-int		ft_strisnum(char *s)
+void	ft_swap(int64_t a, int64_t b)
 {
-	if (s == NULL)
-		return (0);
-	while (*s != 0)
-	{
-		if (!ft_isdigit(*s))
-			return (0);
-		++s;
-	}
-	return (1);
+	uint64_t	tmp;
+
+	tmp = a;
+	a = b;
+	b = tmp;
 }

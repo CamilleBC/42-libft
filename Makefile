@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/01/18 17:06:34 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/01/19 22:07:42 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,9 @@ SRCS 	+=	ft_abs32.c \
 			ft_min.c \
 			ft_pow.c \
 			ft_round.c \
-			ft_sqrt.c
+			ft_sqrt.c \
+			ft_swap_u.c \
+			ft_swap.c
 SRCS	+=	ft_bzero.c \
 			ft_memalloc.c \
 			ft_memccpy.c\
@@ -47,6 +49,7 @@ SRCS	+=	ft_bzero.c \
 			ft_memset.c	\
 			ft_realloc.c
 SRCS	+=	ft_atoi.c \
+			ft_atoi64.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
@@ -77,6 +80,8 @@ SRCS	+=	ft_atoi.c \
 			ft_strdup.c \
 			ft_strequ.c \
 			ft_strisalnum.c \
+			ft_strisnum.c \
+			ft_strisnumber.c \
 			ft_striter.c \
 			ft_striteri.c \
 			ft_strjoin.c \
@@ -117,10 +122,13 @@ INC_DIR	:=	./includes
 IFLAGS	+= $(foreach d, $(INC_DIR), -I$d)
 
 # echo output colours
-CYAN	= \e[1;36m
 RED		= \033[1;31m
-WHITE	= \033[1;37m
+GREEN	= \033[1;32m
+YELLOW	= \033[1;33m
+BLUE	= \033[1;34m
 PURPLE	= \033[1;35m
+CYAN	= \033[1;36m
+WHITE	= \033[1;37m
 NC		= \033[0m
 
 .PHONY: all clean fclean re

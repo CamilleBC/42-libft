@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:38:28 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 17:55:53 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/19 17:12:07 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ char	*ft_strdup(const char *s);
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strisalnum(char *s);
 int		ft_strisnum(char *s);
+int		ft_strisnumber(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);

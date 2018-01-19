@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strisnum.c                                      :+:      :+:    :+:   */
+/*   ft_strisnumber.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/18 17:28:55 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/19 17:11:54 by cbaillat         ###   ########.fr       */
+/*   Created: 2018/01/19 17:11:25 by cbaillat          #+#    #+#             */
+/*   Updated: 2018/01/19 17:11:46 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "strings.h"
 
 /*
-** Returns (1) if the string is numerical, (0) otherwise
+** Returns (1) if the string represents an integer, (0) otherwise
 */
 
-int		ft_strisnum(char *s)
+int		ft_strisnumber(char *s)
 {
 	if (s == NULL)
 		return (0);
+	if (*s == '-' || *s == '+')
+		++s;
 	while (*s != 0)
 	{
 		if (!ft_isdigit(*s))
