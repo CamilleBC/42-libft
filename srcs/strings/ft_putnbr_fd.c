@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 14:07:04 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:49:21 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/22 12:54:45 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #define MAX_INT_LENGTH 11
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int64_t n, int64_t fd)
 {
 	char	number[MAX_INT_LENGTH];
 	int		digit;

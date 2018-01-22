@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:38:28 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/19 17:12:07 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/22 12:55:57 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,15 @@ int8_t	ft_islower(char c);
 int		ft_isprint(int c);
 int8_t	ft_isupper(char c);
 char	*ft_itoa(int n);
+void	ft_print(const char *format, ...);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putendl(char const *s);
-void	ft_putnbr_fd(int n, int fd);
-void	ft_putnbr(int n);
-void	ft_putnbrf(long double n, size_t size);
+void	ft_putnbr_base(int64_t n, int8_t base);
+void	ft_putnbr_fd(int64_t n, int64_t fd);
+void	ft_putnbr(int64_t n);
+void	ft_putdouble(long double n, size_t size);
 void	ft_putnstr(char const *s, size_t n);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putstr(char const *s);
