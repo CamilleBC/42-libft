@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/01/22 12:59:37 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/01/22 13:12:17 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ CFLAGS	= -Wall -Werror -Wextra
 # we use the VPATH variable which causes MAKE to look for sources in all those
 # directories
 VPATH	+= 	./srcs/iostream:./srcs/math:./srcs/memory:./srcs/lists:./srcs/strings
-SRCS	=	get_next_line.c
+SRCS	=	ft_print.c \
+			get_next_line.c
 SRCS	+=	ft_lstadd.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
@@ -63,7 +64,6 @@ SRCS	+=	ft_atoi.c \
 			ft_putdouble.c \
 			ft_putendl_fd.c \
 			ft_putendl.c \
-			ft_print.c \
 			ft_putnbr_base.c \
 			ft_putnbr_fd.c \
 			ft_putnbr.c \

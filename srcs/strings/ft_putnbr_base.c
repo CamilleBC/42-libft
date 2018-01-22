@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 12:51:54 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/22 12:54:28 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/22 19:55:39 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_putnbr_base(int64_t n, int8_t base)
 	while (n < 0)
 	{
 		number[digit] = base_str[-(n % base)];
-		n = n / 10;
+		n = n / base;
 		digit++;
 	}
 	digit--;
