@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:27:02 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/19 16:37:00 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/01/25 19:49:22 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 # include "libft.h"
 
-# define MAX_32		(int32_t)2147483647
-# define MIN_32		(int32_t)-2147483648
-# define MAX_64		(int64_t)9223372036854775807
-# define MIN_64		(int64_t)-9223372036854775808
 # define OVERFLOW	(int)-1
 # define UNDERFLOW	(int)0
 # define OK			(int)1
