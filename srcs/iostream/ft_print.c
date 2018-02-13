@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 12:10:13 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/22 13:05:05 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/13 16:11:00 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ static char	*parse_format(char *str, va_list ap)
 		ft_putnbr_base(va_arg(ap, int64_t), 16);
 	else if (*str == 'b')
 		ft_putnbr_base(va_arg(ap, int64_t), 2);
-	++str ;
+	++str;
 	return (str);
 }
 
-void	ft_print(const char *format, ...)
+void		ft_print(const char *format, ...)
 {
 	va_list		ap;
 	char		*str;

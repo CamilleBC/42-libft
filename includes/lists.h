@@ -6,14 +6,14 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:35:01 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:37:25 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/13 16:10:31 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LISTS_H
 # define LISTS_H
 
-#include "libft.h"
+# include "libft.h"
 
 typedef struct		s_list
 {
