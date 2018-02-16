@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 20:23:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:46:39 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/15 15:56:07 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,28 +18,43 @@
 ** If we ask for a bigger size, the rest of the memory zone is set to 0.
 */
 
-void	*ft_realloc(void *ptr, size_t len, size_t new_len)
+/*void	*ft_realloc(void *ptr, size_t len, size_t new_len)
+ {
+	void	*tmp;
+
+	if (new_len == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	else if (!ptr)
+		return (malloc(new_len));
+	else if (new_len <= len)
+		return (ptr);
+	tmp = malloc(new_len);
+	if (tmp)
+	{
+		ft_memcpy(tmp, ptr, len);
+		ft_bzero(tmp + len, new_len - len);
+		free(ptr);
+		return (NULL);
+	}
+	return (tmp);
+}*/
+
+void	*ft_realloc(void *data, size_t len, size_t size)
 {
 	void	*tmp;
 
-	if (new_len == 0 || new_len <= len)
+	if (!(tmp = malloc(size)))
 	{
-		free(ptr);
+		if (data)
+			free(data);
 		return (NULL);
 	}
-	if (ptr == NULL)
-	{
-		if ((ptr = malloc(new_len)) == NULL)
-			return (NULL);
-		return (ptr);
-	}
-	if ((tmp = malloc(new_len)) == NULL)
-	{
-		free(ptr);
-		return (NULL);
-	}
-	ft_memcpy(tmp, ptr, len);
-	ft_bzero(tmp + len, new_len - len);
-	free(ptr);
+	if (!data)
+		return (tmp);
+	ft_memmove(tmp, data, len);
+	free(data);
 	return (tmp);
 }
