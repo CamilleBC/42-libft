@@ -6,13 +6,13 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 18:16:00 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:49:21 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/16 14:36:55 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "strings.h"
 
-int		ft_isalnum(int c)
+int8_t	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z')
 		|| (c >= 'a' && c <= 'z')

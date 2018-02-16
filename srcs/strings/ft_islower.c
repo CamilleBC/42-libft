@@ -6,13 +6,13 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/26 23:20:58 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:49:21 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/16 14:35:58 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "strings.h"
 
-int8_t	ft_islower(char c)
+int8_t	ft_islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);

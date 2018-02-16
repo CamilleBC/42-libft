@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/01/22 13:12:17 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/02/16 14:33:52 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,6 +57,7 @@ SRCS	+=	ft_atoi.c \
 			ft_isdigit.c \
 			ft_islower.c \
 			ft_isprint.c \
+			ft_isspace.c \
 			ft_isupper.c \
 			ft_itoa.c \
 			ft_putchar_fd.c \

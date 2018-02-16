@@ -6,13 +6,13 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 18:13:38 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/18 13:49:21 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/16 14:35:03 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "strings.h"
 
-int		ft_isdigit(int c)
+int8_t	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

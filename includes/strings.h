@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:38:28 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/22 13:11:48 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/16 14:37:02 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,14 @@
 
 int32_t	ft_atoi(const char *str);
 int64_t	ft_atoi64(const char *str);
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int8_t	ft_islower(char c);
-int		ft_isprint(int c);
-int8_t	ft_isupper(char c);
+int8_t	ft_isalnum(int c);
+int8_t	ft_isalpha(int c);
+int8_t	ft_isascii(int c);
+int8_t	ft_isdigit(int c);
+int8_t	ft_islower(int c);
+int8_t	ft_isprint(int c);
+int8_t	ft_isspace(int c);
+int8_t	ft_isupper(int c);
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
