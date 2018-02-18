@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 12:10:13 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/16 13:52:36 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/18 17:39:33 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static char	*parse_format(char *str, va_list ap)
 		return (NULL);
 	if (*str == 's')
 		ft_putstr(va_arg(ap, char*));
-	if (*str == 'S')
+	else if (*str == 'S')
 		ft_wputstr(va_arg(ap, wchar_t*));
 	else if (*str == 'c')
 		ft_putchar(va_arg(ap, int));
