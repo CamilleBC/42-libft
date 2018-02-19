@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 12:51:54 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/16 13:52:02 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/19 08:29:31 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	check_sign(int64_t *n)
 		*n = (*n) * -1;
 }
 
-static void put_prefix(int8_t base)
+static void	put_prefix(int8_t base)
 {
 	if (base == 2)
 		ft_putstr("0b");
