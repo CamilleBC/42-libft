@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 19:34:58 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/15 15:53:56 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/21 15:46:06 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ static int	read_line(const int fd, char fd_buffer[BUFF_SIZE], char **line)
 	char		*newline;
 	uint32_t	len;
 
+	status = 0;
 	while (((newline = ft_strchr(*line, '\n')) == NULL)
 			&& ((status = read(fd, fd_buffer, BUFF_SIZE)) > FILE_READ))
 	{
