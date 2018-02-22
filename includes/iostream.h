@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 16:59:44 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/22 12:22:16 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/22 13:30:27 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
 # include <stdarg.h>
 # include "libft.h"
 
-# define BUFF_SIZE	256
+# define BUFF_SIZE	4096
 # define LINE_READ	(int8_t)1
 # define FILE_READ	(int8_t)0
-# define X64_SIZE				(size_t)64
+# define X64_SIZE	(size_t)64
 
 typedef struct	s_buffer
 {
