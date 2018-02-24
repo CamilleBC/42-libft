@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/02/22 11:08:13 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/02/24 19:23:28 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ CFLAGS	= -Wall -Werror -Wextra
 # libft sources
 # we use the VPATH variable which causes MAKE to look for sources in all those
 # directories
-VPATH	+= 	./srcs/iostream:./srcs/math:./srcs/memory:./srcs/lists:./srcs/strings
+VPATH	+= 	./srcs/iostream:./srcs/lists:./srcs/math:./srcs/memory
+VPATH	+= 	./srcs/queue:./srcs/strings
 SRCS	=	ft_print.c \
 			get_next_line.c
 SRCS	+=	ft_lstadd.c \
@@ -49,6 +50,12 @@ SRCS	+=	ft_bzero.c \
 			ft_memmove.c \
 			ft_memset.c	\
 			ft_realloc.c
+SRCS	+=	ft_deque_create.c \
+			ft_deque_delete.c \
+			ft_deque_pop_back.c \
+			ft_deque_pop_front.c \
+			ft_deque_push_back.c \
+			ft_deque_push_front.c
 SRCS	+=	ft_atoi.c \
 			ft_atoi64.c \
 			ft_isalnum.c \

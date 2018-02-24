@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/15 09:05:38 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/24 19:26:12 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include "lists.h"
 # include "math.h"
 # include "memory.h"
+# include "queue.h"
 # include "strings.h"
 
 # define SUCCESS	(int32_t)0
