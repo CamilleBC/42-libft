@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:38:28 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/22 11:09:04 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/02/24 20:09:38 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putendl(char const *s);
-void	ft_putnbr_base(int64_t n, int8_t base);
+void	ft_putnbr_base(uint64_t n, int8_t base);
 void	ft_putnbr_fd(int64_t n, int64_t fd);
 void	ft_putnbr(int64_t n);
 void	ft_putnbru(uint64_t n);
