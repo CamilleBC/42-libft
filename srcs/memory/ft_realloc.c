@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 20:23:03 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/19 08:30:24 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/01 12:14:01 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_realloc(void *data, size_t len, size_t size)
 {
 	void	*tmp;
 
-	if (!(tmp = malloc(size)))
+	if (!(tmp = ft_memalloc(size)))
 	{
 		if (data)
 			free(data);
