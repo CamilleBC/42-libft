@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:27:02 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/01/25 19:49:22 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/14 11:13:59 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ intmax_t	ft_max(intmax_t a, intmax_t b);
 intmax_t	ft_min(intmax_t a, intmax_t b);
 double		ft_pow(int32_t base, int32_t pow);
 intmax_t	ft_round(long double f);
+intmax_t	ft_roundup(long double f);
 uint32_t	ft_sqrt(uint32_t nb);
 void		ft_swap_u(uint64_t a, uint64_t b);
 void		ft_swap(int64_t a, int64_t b);

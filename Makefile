@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/02/25 10:13:24 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/03/14 11:14:10 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRCS 	+=	ft_abs32.c \
 			ft_min.c \
 			ft_pow.c \
 			ft_round.c \
+			ft_roundup.c \
 			ft_sqrt.c \
 			ft_swap_u.c \
 			ft_swap.c
