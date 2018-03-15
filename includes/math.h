@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 13:27:02 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/03/14 11:13:59 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/15 13:22:08 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 
 # define OVERFLOW	(int)-1
 # define UNDERFLOW	(int)0
-# define OK			(int)1
 
 uint32_t	ft_abs32(int32_t nb);
 uint64_t	ft_abs64(int64_t nb);

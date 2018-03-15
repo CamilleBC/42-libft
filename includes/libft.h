@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 14:33:34 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/28 13:03:53 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/15 13:22:06 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@
 # include "queue.h"
 # include "strings.h"
 
-# define TRUE		(uint8_t)1
-# define FALSE		(uint8_t)0
 # define SUCCESS	(int8_t)0
 # define ERROR		(int8_t)-1
 # define FAILURE	(int8_t)-2
