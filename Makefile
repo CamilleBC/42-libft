@@ -6,13 +6,14 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/03/14 11:14:10 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/03/16 10:13:18 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 CC		= gcc
+RM		= rm
 CFLAGS	= -Wall -Werror -Wextra
 
 # libft sources
@@ -159,11 +160,11 @@ $(OBJ_DIR)/%.o:%.c
 
 clean:
 	@echo "[Cleaning ${PURPLE}lib${NC} objects]"
-	@/bin/rm -rf $(OBJ_DIR)
+	@$(RM) -rf $(OBJ_DIR)
 
 fclean: clean
 	@echo "[Cleaning ${PURPLE}lib${NC} binary]"
-	@/bin/rm -rf $(NAME)
+	@$(RM) -rf $(NAME)
 
 re: fclean all
 
