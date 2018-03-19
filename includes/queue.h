@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/24 18:12:49 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/02/25 10:13:13 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/19 16:20:16 by cbaillat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ t_deque			*ft_deque_create(void);
 void			ft_deque_delete(t_deque *deque);
 void			ft_deque_delete_data(t_deque *deque);
 void			*ft_deque_pop_back(t_deque *deque);
+void			*ft_deque_pop_elmt(t_deque *deque, t_deque_elmt *elmt);
 void			*ft_deque_pop_front(t_deque *deque);
 int8_t			ft_deque_push_back(t_deque *deque, void *data);
 int8_t			ft_deque_push_front(t_deque *deque, void *data);

@@ -6,7 +6,7 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/03/16 10:13:18 by cbaillat         ###   ########.fr        #
+#    Updated: 2018/03/19 16:17:03 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,6 +56,7 @@ SRCS	+=	ft_deque_create.c \
 			ft_deque_delete.c \
 			ft_deque_delete_data.c \
 			ft_deque_pop_back.c \
+			ft_deque_pop_elmt.c \
 			ft_deque_pop_front.c \
 			ft_deque_push_back.c \
 			ft_deque_push_front.c
