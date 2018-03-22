@@ -6,7 +6,7 @@
 /*   By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/19 15:40:16 by cbaillat          #+#    #+#             */
-/*   Updated: 2018/03/21 18:18:35 by cbaillat         ###   ########.fr       */
+/*   Updated: 2018/03/22 10:36:42 by briviere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,22 @@ void	*ft_deque_pop_elmt(t_deque *deque, t_deque_elmt *elmt)
 
 	if (deque->size == 0)
 		return (NULL);
-	deque->size -= 1;
-
 	if (!elmt)
 		return (NULL);
-	prev = deque->head;
-	if (prev == elmt)
+	if (deque->head == elmt)
 		return (ft_deque_pop_front(deque));
-	while (prev->next != elmt)
+	if (deque->tail == elmt)
+		return (ft_deque_pop_back(deque));
+	prev = deque->head;
+	while (prev->next && prev->next != elmt)
 		prev = prev->next;
+	if (!prev->next)
+		return (NULL);
 	data = elmt->data;
 	prev->next = elmt->next;
-	if (!prev->next)
-		deque->tail = prev;
+	prev->next->prev = prev;
+	free(data);
 	free(elmt);
+	deque->size -= 1;
 	return (data);
 }
