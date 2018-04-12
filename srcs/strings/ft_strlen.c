@@ -12,7 +12,7 @@
 
 #include "strings.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	uint64_t len;
 
