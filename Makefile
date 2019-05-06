@@ -6,11 +6,11 @@
 #    By: cbaillat <cbaillat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 18:12:06 by cbaillat          #+#    #+#              #
-#    Updated: 2018/03/19 16:17:03 by cbaillat         ###   ########.fr        #
+#    Updated: 2019/05/06 16:21:06 by cbaillat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+LIB = libft.a
 
 CC	= gcc
 RM	= rm
@@ -127,14 +127,14 @@ SRCS	+=	ft_atoi.c \
 
 # object files
 OBJ_DIR		:=	./obj
-OBJECTS		:= $(patsubst %,$(OBJ_DIR)/%,$(SRCS:.c=.o))
+OBJECTS		:=	$(patsubst %,$(OBJ_DIR)/%,$(SRCS:.c=.o))
 # objects dependencies
-DEPS		= $(OBJECTS:.o:.d)
-DEPS_FLAGS	= -MMD -MP
+DEPS		=	$(OBJECTS:.o:.d)
+DEPS_FLAGS	=	-MMD -MP
 
 # includes
-INC_DIR	:= ./includes
-IFLAGS	+= $(foreach d, $(INC_DIR), -I$d)
+IDIR	:=	./includes
+IFLAGS	+=	$(addprefix -I,$(IDIR))
 
 # echo output colours
 RED	= \033[1;31m
@@ -148,11 +148,11 @@ NC	= \033[0m
 
 .PHONY: all clean fclean re
 
-all: $(NAME)
+all: $(LIB)
 
-$(NAME): $(OBJECTS)
-	@echo "[Building ${PURPLE}library${NC}]"
-	@ar rcs $(NAME) $(OBJECTS)
+$(LIB): $(OBJECTS)
+	@echo "[Building ${PURPLE}libft${NC}]"
+	@ar rcs $(LIB) $(OBJECTS)
 
 $(OBJ_DIR)/%.o:%.c
 	@mkdir -p $(OBJ_DIR)
@@ -164,7 +164,7 @@ clean:
 
 fclean: clean
 	@echo "[Cleaning ${PURPLE}lib${NC} binary]"
-	@$(RM) -rf $(NAME)
+	@$(RM) -rf $(LIB)
 
 re: fclean all
 
